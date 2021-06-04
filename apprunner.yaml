@@ -1,0 +1,23 @@
+version: 1.0
+runtime: node12
+build:
+  commands:
+    pre-build:
+      - npm install -g yarn
+      - yarn install
+    build:
+      - yarn build
+    # post-build:
+    #   -
+  env:
+    - name: MY_VAR_EXAMPLE
+      value: "example"
+run:
+  # runtime-version: 12.x.x
+  command: yarn start
+  network:
+    port: 8080
+    env: PORT
+  env:
+    - name: MY_VAR_EXAMPLE
+      value: "example"

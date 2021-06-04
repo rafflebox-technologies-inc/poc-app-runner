@@ -1,11 +1,11 @@
 ## Install dependencies.
 
 ```
-$ npm install
+$ yarn install
 ```
 
 ## Run the app
 
 ```
-$ npm run start
+$ yarn start
 ```
